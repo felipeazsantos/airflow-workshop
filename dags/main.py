@@ -2,9 +2,12 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 
+def hello_world():
+    print("Hello World")
+
 with DAG(
     dag_id="airflow_workshop",
-    schedule_interval="0 0 * * *",
+    schedule="@daily",
     start_date=datetime(2026, 1, 1),
     catchup=False,
 ) as dag:
@@ -15,5 +18,3 @@ with DAG(
     )
 
 
-def hello_world():
-    print("Hello World")
