@@ -1,0 +1,14 @@
+dags/primeira_dag.py
+  h_a12d55a28e40e6 32-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "d7ec93e0263c0034f986ffa298a28e87975cc617",
+  "prompts": {},
+  "humans": {
+    "h_a12d55a28e40e6": {
+      "author": "felipeazsantos <felipeasantos10@hotmail.com>"
+    }
+  }
+}
