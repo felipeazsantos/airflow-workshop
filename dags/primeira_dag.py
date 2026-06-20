@@ -29,4 +29,12 @@ def primeira_dag():
         print("Minha quarta atividade! - Hello World")
         sleep(2)
 
-    primeira_atividade() >> segunda_atividade() >> terceira_atividade() >> quarta_atividade()
+    t1 = primeira_atividade()
+    t2 = segunda_atividade()
+    t3 = terceira_atividade()
+    t4 = quarta_atividade()
+
+    t1 >> t2 >> t3 >> t4
+
+
+primeira_dag()
